@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>G2l-custom by tsukaguitar</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">G2l-custom</h1>
+        <p class="header">Livedoor ReaderをちょっぴりカスタマイズするGreasemonkeyスクリプト。</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/tsukaguitar/G2L-custom/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/tsukaguitar/G2L-custom/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/tsukaguitar/G2L-custom">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/tsukaguitar">tsukaguitar</a></p>
+
+
+      </header>
+      <section>
+        <h1>G2L custom</h1>
+
+<p>Livedoor ReaderをちょっぴりカスタマイズするGreasemonkeyスクリプト。</p>
+
+<h2>説明</h2>
+
+<p>Google Reader難民としてLivedoor Readerに引っ越したものの、ちょっと不満があったので、Greasemonkeyスクリプトで一部解消してみました。内容は以下の通りです。よろしくお願いいたします。</p>
+
+<ul>
+<li>デザインの微調整</li>
+<li>ヘッダーを一段階非表示に</li>
+<li>本文を最初から非表示に</li>
+<li>本文非表示時のコンパクト化</li>
+<li>既読コマンドにキー割り当て</li>
+</ul><h2>スクリーンショット</h2>
+
+<ul>
+<li>通常時<br><img src="img/g2l-full_off.png" alt="" width="437" height="330">
+</li>
+<li>適用時<br><img src="img/g2l-full_on.png" alt="" width="437" height="330">
+</li>
+<li>本文非表示＆通常時<br><img src="img/g2l-min_off.png" alt="" width="454" height="330">
+</li>
+<li>本文非表示＆適用時<br><img src="img/g2l-min_on.png" alt="" width="454" height="330">
+</li>
+</ul><h2>要件</h2>
+
+<ul>
+<li>要Greasemonkey（ChromeならTampermonkey）</li>
+<li>Safariはよく分かりませんが、グリモンスクリプト動くならいけるかもしれません。</li>
+</ul><h2>設定</h2>
+
+<h3>機能の選択</h3>
+
+<p>デザイン微調整、コンパクト化、既読キーバインドの3つに分けてますので、どれかが不要であればバッサリ消して下さい。コメントが目印です。  </p>
+
+<h4>コメントとその機能</h4>
+
+<ul>
+<li>
+<code>LDR Style</code>以下<br>
+→デザイン微調整</li>
+<li>
+<code>compact list</code>以下<br>
+→本文非表示時のコンパクト化</li>
+<li>
+<code>already-read keybind</code>以下<br>
+→既読キーバインド</li>
+</ul><h3>既読キーの変更</h3>
+
+<p>既読キーは<code>X</code>（大文字のX。つまり<code>Shift+X</code>）に割り当てています。変えたい場合は以下の箇所を変更してください。</p>
+
+<h4>設定方法</h4>
+
+<p>スクリプト37行目の<code>'X'</code>を好きなキーに変更すればOK。</p>
+
+<div class="highlight"><pre><span class="nx">Keybind</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'X'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</pre></div>
+
+<h2>ライセンス（License）</h2>
+
+<p>Copyright © 2013 <a href="http://www.rakuin.com">tsukaguitar</a><br>
+Licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
